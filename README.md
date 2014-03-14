@@ -58,3 +58,10 @@ This concatenates all coffee files you specify in the `nake.coffee` file to one 
 
 And your done, you now have one big `Minze.js` file in your release folder. Load it up in your browser and your game will run.
 
+### TODO ###
+1. Implement Audio Support
+2. Implement Mouse Events
+3. Implement Touch Events
+4. Write a documentation and add additional Samples.
+5. Some stuff i forgot...
+
