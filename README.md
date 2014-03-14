@@ -58,6 +58,14 @@ This concatenates all coffee files you specify in the `nake.coffee` file to one 
 
 And your done, you now have one big `Minze.js` file in your release folder. Load it up in your browser and your game will run.
 
+### Dependencies ###
+None actually... just basic canvas goodness.
+In the `libs` folder you can find a simple JavaScript lib to abstract some DOM functions.
+
+Use `th.ready(function(){...})` in to execute code when the document is ready. Same as jQuery.
+
+Use `th("#something")` to retrieve a DOM element.
+
 ### TODO ###
 1. Implement Audio Support
 2. Implement Mouse Events
