@@ -34,25 +34,25 @@ Flashpunk and GameMaker.
 2. You add some `Entity` instances to the world
 3. Each entity implements an update function, this code gets called with about ~60fps (ideally)
 4. Add the entities to the World instance
-5. Finally call Minze.start(`your world`)
+5. Finally call `Minze.start(world)`
 
 A simple example can be found in the `src/jmp0` folder. See also the live demo linked above.
 
 ### Building ###
 Ok now this is a little different from "classic" coffee script projects.
-As said, Minze is aimed at developers and game makers with no interest in build scripts, asynchronous stuff, and so on.
-Minze therefor uses a very simple `nake.coffee` pseudo-build script.
+As said, Minze is aimed at developers and game makers, with no interest in build scripts, asynchronous stuff, and so on.
+Minze therefore uses a very simple `nake.coffee` pseudo-build script.
 
 In the `nake.coffee` file you will find the following line:
 
 `files = collectFiles(["src/minze/", "src/jmp0/"])`
 
-exchange the `src/jmp0/` part with any folder you put your code in and extend this array by adding additional folders if necessary.
+exchange the `src/jmp0/` part with any folder you put your code in, and extend this array by adding additional folders if necessary.
 
 Afterwards, to build your project, run the following commands:
 
 1. `coffee nake.coffee` 
-This concatenates all coffee files you specify in the `nake.coffee` file to one big Minze.coffee in the release folder.
+This concatenates all coffee files you specify in the `nake.coffee` file to one big `Minze.coffee` file in the release folder.
 
 2. `coffee -o release -c release\Minze.coffee`
 
